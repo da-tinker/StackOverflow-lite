@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="res/js/InputValidation.js"></script>
+    <title>Create Account - SO_Lite</title>
+</head>
+
+<body>
+    <form id="frmNewMemberSignup" action="" method="POST" onsubmit="return CheckForm(this,'divError');">
+        <label id="lblEmail" for="txtEmail">Email</label>
+        <br><input name="txtEmail" type="text" value="" />
+        <br><label id="lblPassword" for="txtPassword">Password</label>
+        <br><input name="txtPassword" type="password" /> (Minimum 4 Characters)
+        <br><label id="lblConfirmPassword" for="txtConfirmPassword">Confirm Password</label>
+        <br><input name="txtConfirmPassword" type="password" />
+        <br><label id="lblFirstName" for="txtFirstName">First Name</label>
+        <br><input name="txtFirstName" type="text" value="" />
+        <br><label id="lblSurname" for="txtSurname">Surname</label>
+        <br><input name="txtSurname" type="text" value="" />
+        <br><label id="lblSignupDate" for="txtSignupDate">Date</label>
+        <br><input name="txtSignupDate" type="text" value="" /> (dd/mm/yyyy)
+
+        <input name="cmdSignup" type="submit" value="Sign Up!" />
+        <br>
+        <div id="divError">Error Messages Displayed here</div>
+    </form>
+</body>
+</html>
